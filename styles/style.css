@@ -131,3 +131,59 @@ hr{
     border-radius: 22px;
     padding: 4px;
 }
+
+
+
+
+
+
+
+
+/* media queries for mobile device*/
+
+@media (max-width: 688px) {
+    .section-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        justify-content: center;
+    }
+    .player, .blog{
+       flex-direction: column;
+       margin-bottom: 14px;
+    }
+    .course{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .course-info{
+        justify-content: center;
+    }
+    
+}
+
+
+
+/* tablet devices  */
+
+
+@media (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player{
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+    }
+}
