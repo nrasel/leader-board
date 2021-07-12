@@ -9,6 +9,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .container{
@@ -175,15 +178,36 @@ hr{
 
 
 @media (min-width: 688px) and (max-width: 992px) {
+    .section-title{
+        text-align: center;
+    }
     .container{
         width: 100%;
+        padding-left: 70px;
+        /* padding-right: 100px; */
     }
-    .players{
+    .players, .blogs{
         grid-template-columns: repeat(2,1fr);
     }
     .player{
         justify-content: center;
+       
+    }
+    .courses{
+        grid-template-columns: repeat(2,1fr); 
+       grid-column-gap: 0;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        justify-content: center;
         align-items: center;
-        align-content: flex-start;
+        width: 100%;
+        
+    }
+    .courses .course .course-banner img{
+        width: 320px;
+        height: 220px;
     }
 }
